@@ -30,7 +30,7 @@ function BotCard({bot, army,setArmy,setBots}) {
     });
   }
   return (
-    <div className="ui column">
+    <div className="click">
       <div
         className="ui card"
         key={bot.id}
@@ -48,7 +48,7 @@ function BotCard({bot, army,setArmy,setBots}) {
             <small>{bot.catchphrase}</small>
           </div>
         </div>
-        <div className="extra content">
+        <div className="content">
           <span>
             <i className="icon heartbeat" />
             {bot.health}
@@ -63,7 +63,7 @@ function BotCard({bot, army,setArmy,setBots}) {
             {bot.armor}
           </span>
           <span>
-            <div className="ui center aligned segment basic">
+            <div className="ui center ">
               <button
                 className="ui mini red button"
                 onClick={handleDelete}
